@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace HFCSPg422WatchItExampleForEachThroughListExample
 {
@@ -6,7 +7,12 @@ namespace HFCSPg422WatchItExampleForEachThroughListExample
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            List<string> values = new List<string>();
+            values.Add("a value");
+            foreach (string s in values)
+            {
+                values.Add("another value");
+            }
         }
     }
 }
